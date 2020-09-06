@@ -1,0 +1,21 @@
+{
+    "name": "villain/offiaccount",
+    "description": "微信公众号开发，小程序开发",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "VillainWen",
+            "email": "1779479582@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "villain\\offiaccount\\": "src"
+        }
+    },
+    "require": {
+        "ext-json": "*",
+        "topthink/think-helper": "^3.0.4"
+    }
+}

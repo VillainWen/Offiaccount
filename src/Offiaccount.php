@@ -28,14 +28,16 @@ class Offiaccount {
 	public $tips_info;
 	public $media_path;
 
-	public function __construct($appid, $secret, $token, $runtime_path, $media_path) {
+	public function __construct($appid, $secret, $token, $runtime_path='', $media_path='') {
 		$this->appid        = $appid;
 		$this->secret       = $secret;
 		$this->token        = $token;
-		$this->runtime_path = $runtime_path ? $runtime_path : root_path();
+
+		$runtime_path = $runtime_path ? $runtime_path : root_path();
+		$this->runtime_path = $runtime_path . '/runtime/villain/';
 		$this->media_path   = $media_path ? $media_path : public_path();
 
-		Cache::init($this->runtime_path . '/runtime/simplecache/');
+		Cache::init($this->runtime_path . 'simplecache/');
 	}
 
 	public function init () {

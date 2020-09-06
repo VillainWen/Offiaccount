@@ -23,7 +23,7 @@ class Logs {
 	 * @return [type]          [description]
 	 */
 	public function logs ($content = '', $base_path) {
-		$path = 'wechat/' . date("Y-m") . '/';
+		$path = 'log/' . date("Y-m") . '/';
 		$full_path = $base_path . $path;
 
 		if (!is_dir($full_path)) {

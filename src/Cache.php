@@ -72,7 +72,7 @@ class Cache {
 	 */
 	private static function readAndRender(){
 		if(!file_exists(self::$cacheDir)){
-			mkdir(self::$cacheDir);
+			mkdir(self::$cacheDir, 0755, true);
 		}
 
 		if(file_exists(self::$cacheFile)){

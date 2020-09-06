@@ -34,7 +34,7 @@ class Offiaccount {
 		$this->token        = $token;
 
 		$runtime_path = $runtime_path ? $runtime_path : root_path();
-		$this->runtime_path = $runtime_path . '/runtime/villain/';
+		$this->runtime_path = $runtime_path . 'runtime/villain/';
 		$this->media_path   = $media_path ? $media_path : public_path();
 
 		Cache::init($this->runtime_path . 'simplecache/');
